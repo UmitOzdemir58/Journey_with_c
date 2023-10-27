@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+
+int main() {
+	
+	float sayi1;
+	float sayi2;
+	float sonuc;
+	char islem;
+	
+	
+	printf("*************-Hesap Makinasi-*************\n\n");
+	printf("Birinci sayi giriniz:");
+	scanf("%f",&sayi1);
+	printf("yapilacak islem:");
+	scanf("%s",&islem);
+	printf("İkinci sayi giriniz:");
+	scanf("%f",&sayi2);
+	
+	if (islem=='+') {
+		sonuc=sayi1+sayi2;
+		
+		printf("sonuc: %f",sonuc);
+	
+	}
+	
+	
+	else if (islem=='-') {
+		sonuc=sayi1-sayi2;
+		
+		printf("sonuc: %f",sonuc);
+	
+	}
+	
+	
+	else if (islem=='/') {
+		sonuc=sayi1/sayi2;
+		
+		printf("sonuc: %f",sonuc);
+	
+	}
+	
+	
+	
+	
+	else if (islem=='*') {
+		sonuc=sayi1*sayi2;
+		
+		printf("sonuc: %f",sonuc);
+	
+	
+	}
+	
+	else{
+		printf("Hatali islem yaptiniz");
+	}
+	
+	
+	return 0;
+}
